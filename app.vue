@@ -1,8 +1,11 @@
 <template>
-  <button @click="emitModalShow" class="px-4 py-2 bg-blue-500 text-white hover:bg-blue-600">Otworz
-    modal</button>
-
-  <Modal @modalValue="emitModalShow" :modalValue="showModal" :nameuser="'Aleksandra Rogo'" />
+  <ul>
+    <li><nuxt-link to="/">Strona główna</nuxt-link></li>
+    <li>
+      <nuxt-link to="/about">O nas</nuxt-link>
+    </li>
+    </ul>
+<NuxtPage/>
 </template>
 <script setup>
 const showModal = ref(false)
